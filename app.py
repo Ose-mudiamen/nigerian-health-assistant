@@ -28,7 +28,7 @@ if user_input:
         st.write(response)
 with st.sidebar:
     st.title("About")
-    st.write("This AI assistant helps everyday Nigerians understand their systoms and decide what to do.")
+    st.write("This AI assistant helps everyday Nigerians understand their symptoms and decide what to do.")
 
     st.divider()
 
