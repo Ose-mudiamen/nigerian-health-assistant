@@ -26,3 +26,24 @@ if user_input:
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.chat_message("assistant"):
         st.write(response)
+with st.sidebar:
+    st.title("About")
+    st.write("This AI assistant helps everyday Nigerians understand their systoms and decide what to do.")
+
+    st.divider()
+
+    st.title("How to Use")
+    st.write("1. Describe your symptoms in English or Pidgin")
+    st.write("2. Answer the follow up questions")
+    st.write("3. Receive your health assessment")
+
+    st.divider()
+
+    st.title("Disclaimer")
+    st.write("This is not a medical diagnosis. Always consult a qualified doctor for proper medical advice")
+
+    st.divider()
+
+    st.title("Built by")
+    st.write("Benjamin Osezua")
+    st.write("AI Developer | Python & Streamlit") 
