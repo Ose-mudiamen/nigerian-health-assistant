@@ -26,6 +26,12 @@ if user_input:
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.chat_message("assistant"):
         st.write(response)
+    if "ASSESSMENT" in response:
+       st.divider()
+       st.subheader("Your Health Summary")
+       st.info(response)
+       st.warning("This is not a medical diagnosis. Please visit a doctor for proper evaluation.")
+       st.success("Screenshot this summary to show your pharmacist or doctor.")
 with st.sidebar:
     st.title("About")
     st.write("This AI assistant helps everyday Nigerians understand their symptoms and decide what to do.")
