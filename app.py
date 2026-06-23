@@ -15,7 +15,7 @@ I can help you:
             
 *"My body dey hot" . "I dey purge" . "My belle dey pain me"*
 """)
-st.divider
+st.divider()
 
 if "chatbot" not in st.session_state:
     st.session_state.chatbot = HealthChatbot()
