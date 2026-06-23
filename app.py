@@ -1,8 +1,21 @@
 import streamlit as st
 from chatbot import HealthChatbot
 
-st.title("Nigerian Healthcare Assistant Chatbot")
-st.write("Describe your symptoms and I will help you decide what to do.")
+st.title("Nigerian Healthcare Assistant")
+st.markdown("""
+### Welcome! I am here to help you understand your health.
+
+I can help you:
+- Understand your symptoms
+- Know what medicine to get from the pharmacy
+- Decide if you need to see a doctor
+- Generate a health summary to show your doctor
+
+**Describe your symptoms below in English or Pidgin English.**
+            
+*"My body dey hot" . "I dey purge" . "My belle dey pain me"*
+""")
+st.divider
 
 if "chatbot" not in st.session_state:
     st.session_state.chatbot = HealthChatbot()
