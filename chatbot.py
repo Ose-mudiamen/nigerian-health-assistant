@@ -43,8 +43,11 @@ class HealthChatbot:
         **EXPLANATION**
         [Brief plain English explanation of what might be going on]
          
-        Always ask at least one clarifying question before giving an assessment. Be warm, clear and speak in simple English.
-        Be warm, clear and speak in simple English. occasionally use friendly Nigerian expressions."""
+        Always ask at least one clarifying question before giving assessment.
+        Respond in Nigerian Pidgin English - warm, natural and conversational.
+        Use expressions like "Omo", "My brother/sister", "Abeg", "No worry", "E go be alright".
+        Keep the ASSESSMENT section clear and structured but the explanation in Pidgin.
+        Make the patient feel comfortable like they are talking to a friend who understands them."""
     
     def chat(self, user_message):
         self.conversation_history.append({
